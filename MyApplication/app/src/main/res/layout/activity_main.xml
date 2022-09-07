@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C67A7A"
+    android:backgroundTint="#8BC34A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="9dp"
+        android:text="CALCULATOR"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextText1stnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewtitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="1st Number"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPersonName2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="12dp"
+        android:text="Result"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextText1stnumber"
+        android:layout_alignStart="@+id/editTextText1stnumber"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="2nd Number"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewresult"
+        android:layout_alignStart="@+id/textViewresult"
+        android:layout_marginStart="-169dp"
+        android:layout_marginTop="20dp"
+        android:background="#EF9C9C"
+        android:backgroundTint="#F6BEBE"
+        android:text="Addition" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewresult"
+        android:layout_alignStart="@+id/textViewresult"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="21dp"
+        android:background="#EF9C9C"
+        android:backgroundTint="#F6BEBE"
+        android:text="Subtraction" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="49dp"
+        app:srcCompat="@drawable/greencalculator" />
+</RelativeLayout>
